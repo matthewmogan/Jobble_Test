@@ -1,3 +1,11 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 body {
     background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(168, 208, 225));
+}
+
+h1{
+    font-size: 30;
 }

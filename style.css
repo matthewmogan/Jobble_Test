@@ -3,8 +3,29 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(168, 208, 225));
+    background-color: rgb(255, 249, 235)
 }
 
-h1{
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.navbar li {
+    float: left;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    background-color: #111;
 }

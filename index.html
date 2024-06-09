@@ -1,54 +1,54 @@
 <!DOCTYPE html>
-
 <html lang="en-GB">    
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jobble Demo</title>
-    <link rel="stylesheet" href="style.css">
-  </head> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobble Demo</title>
+  <link rel="stylesheet" href="./resources/CSS/style.css">
+</head> 
 
-  <body>
+<body>
+  <!-- structure this nav bar as an object-->
+  <nav class ="navbar">
+    <ul class="navlinks">
+      <li><a href="./index.html" target="_self">Game</a></li>
+      <li><a href="./instructions.html" target ="_self">Instructions</a></li>
+      <li><a href="./about.html" target="_self">About</a></li>
+    </ul>
+  </nav>
 
-    <!-- structure this nav bar as an object, using JS later-->
-    <nav>
-      <ul class="navbar">
-        <li><a href="./index.html" target="_self"> <img src="./Jobble Logo" width ="50" height="50" alt="Jobble Game Development Page" ></a></li>
-        <li><a href="./instructions.html" target ="_self">Instructions</a></li>
-        <li><a href="./investors.html" target="_self">Our Investors</a></li>
-      </ul>
-    </nav>
-  
-    <header>
-      <h1>OECD Jobble</h1>
-    </header>
+  <!-- this is a grid that represents the gameboad -->
+  <div class="board">
+    
+    <!-- row - title -->
+    <h1 class="title"><Span id="game_title">Job</Span>ble</h1>
+    <h2 class="subtitle">Guess the country based on people's jobs!</h2>
+    
+    <!-- row - gameboard -->
+    <h3 class="job_chart">Placeholder for Job Chart</h3>
+    
+    <!-- row - guess interface  -->
+    <h3 class ="guess_dropdown">Guess Dropdown</h3>
+    <h3 class ="guess_action">Guess Button</h3>
 
-    <section id="Masthead">
-      <h2>Welcome to the <strong><abbr title="Minimum Viable Product">MVP</abbr> of <abbr title ="The Organisation for Economic Co-operation and Development">OECD</abbr> Jobble</strong>, a <strong><i>GILCAP Angels</i></strong> funded gaming product!</h2>
-      <p> Jobble is a guessing game, in which you guess the country based on the types of jobs people in the country work! With each guess, we'll tell you if you get closer or further, and the distance to the correct country! What fun, oh what fun, to be had by you!</p>
-      <p> We use <strong><a href="https://www.oecd.org/about/" target="_blank">real OECD data</a></strong> to build your game world!</p>
-      <asside>
-        <blockquote cite="https://en.wikipedia.org/wiki/OECD">
-          <p>The Organisation for Economic Co-operation and Development (OECD) is an intergovernmental organisation with 38 member countries, founded in 1961 to stimulate economic progress and world trade.</p>
-        </blockquote>
-      </asside>
-    </section>
+    <!-- rows - guesses -->
+    <h3 class = "guess 1">Guess 1</h3>
+    <h3 class = "guess 2">Guess 2</h3>  
+    <h3 class = "guess 3">Guess 3</h3>
+    <h3 class = "guess 4">Guess 4</h3>
+    <h3 class = "guess 5">Guess 5</h3>
 
-    <section id="Technology Overview">
-        <h2>The Technology</h2>
-        <p>Inspired by <a href="https://games.oec.world/en/tradle/" target="_blank">Tradle,</a> OECD Jobble is a full stack gaming experience:</p>
-        <ul>
-          <li><strong>Front end</strong> in HTML / CSS and Javascript</li>
-          <li><strong>Back end</strong> in Golang (coming soon!)</li>
-          <li><strong>Database</strong> in SQL (coming soon)</li>
-        </ul>
-    </section>
+    <!-- row - hint -->
 
-    <footer>
-      <p>© 2024 HewMoCo</p>
-    </footer>
+    <h3 class = "hint_button"> Hint Button</h3>
+    <h3 class = "hint"> Placeholder for Hint </h3>
 
-  </body>
+  </div>
 
+  <footer>
+    <p>Matt Mogan - 2024</p>
+  </footer>
+
+</body>
 </html>

@@ -1,0 +1,165 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 249, 235);
+}
+
+/* title formatting */
+
+h1{
+    margin: 0px auto;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+#game_title{
+    color: rgb(59, 159, 87);
+    background-color: transparent;
+}
+
+h2{
+    margin: 0px auto;
+    padding: 5px;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .95em;
+    font-weight: normal;
+    border-top: solid 3px rgb(98, 98, 98);
+    border-bottom: solid 3px rgb(98, 98, 98);
+}
+
+h3{
+    background-color: rgba(202, 202, 202, 0.521);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-weight: normal;
+}
+
+/* the board container */
+
+.board{
+    margin: 100px auto;
+    border: 3px solid rgb(98, 98, 98);
+    height: auto;
+    width: 406px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: auto;
+}
+
+/* components of the game */
+
+.job_chart{
+    height: 200px;
+    width: 390px;
+    padding: 5px;
+    margin: 5px auto;
+    margin-bottom: 0;
+}
+
+.guess_dropdown{
+    height: 50px;
+    width: 295px;
+    padding: 5px;
+    margin: 5px 0px 5px 5px;
+    float:left
+} 
+
+.guess_action{
+    height: 50px;
+    width: 90px;
+    padding: 5px;
+    margin: 5px 5px;
+    float: left;
+} 
+
+.guess{
+    height: 50px;
+    width: 390px;
+    padding: 5px;
+    margin: 5px 5px;
+}
+
+.hint_button{
+    height: 100px;
+    width: 90px;
+    padding: 5px;
+    margin: 5px 5px;
+    float: left
+}
+
+.hint{
+    height: 100px;
+    width: 290px;
+    padding: 5px;
+    margin: 5px 5px;
+    float: left
+}
+
+/* the nav bar */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul.navlinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+ul.navlinks li {
+    float: left;
+}
+
+ul.navlinks li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+ul.navlinks li a:hover {
+    background-color: #111;
+}
+
+/* about section */
+
+.about{
+    margin: 10px 10px;
+}
+
+/* ancillary elements */
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0px;
+}
+
+

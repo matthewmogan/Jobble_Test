@@ -4,19 +4,26 @@
 }
 
 body{
-    background-color: rgb(255, 249, 235);
+    background-image: url('../images/Work_Background.jpg'); /* Path to your background image */
+    background-size:cover; 
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* title formatting */
 
 h1{
     margin: 0px auto;
-    height: 40px;
+    height: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    font-size: 40px;
 }
 
 #game_title{
@@ -32,14 +39,12 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: .95em;
-    font-weight: normal;
-    border-top: solid 3px rgb(98, 98, 98);
-    border-bottom: solid 3px rgb(98, 98, 98);
+    font-size: 18px;
+    font-weight: 400;
 }
 
 h3{
-    background-color: rgba(202, 202, 202, 0.521);
+    background-color: rgb(202, 202, 202);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,13 +55,19 @@ h3{
 /* the board container */
 
 .board{
-    margin: 100px auto;
-    border: 3px solid rgb(98, 98, 98);
+    margin: 80px auto;
+    margin-bottom: 0px !important;
+    /* border: 3px solid rgb(98, 98, 98); */
     height: auto;
     width: 406px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.board+.board{
+    margin-top: 30px;
 }
 
 /* components of the game */
@@ -72,18 +83,47 @@ h3{
 .guess_dropdown{
     height: 50px;
     width: 295px;
-    padding: 5px;
+    /* background-color: rgb(181, 212, 255); */
     margin: 5px 0px 5px 5px;
-    float:left
-} 
+    float:left;
+}
 
-.guess_action{
+input[type="text"] {
+    height: 100%;
+    width: 100%;   
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    padding: 15px 15px;
+}
+
+.guessbtn{
     height: 50px;
     width: 90px;
+}
+
+.button{
     padding: 5px;
     margin: 5px 5px;
     float: left;
+    color:rgb(45, 169, 80);
+    background-color: rgb(199, 246, 212);
+    font-size: 25px;
+    border-radius: 10px;
+    border-color: transparent;
+    text-align: center;
 } 
+
+.button:hover{
+    background-color: rgb(255, 235, 233);
+    font-weight: 600;
+}
+
+.button:active{
+    background-color: rgb(255, 235, 233);
+    color:blue;
+    font-weight: 600;
+}
 
 .guess{
     height: 50px;
@@ -92,7 +132,7 @@ h3{
     margin: 5px 5px;
 }
 
-.hint_button{
+.hintbtn{
     height: 100px;
     width: 90px;
     padding: 5px;
@@ -140,7 +180,8 @@ ul.navlinks li a {
 }
 
 ul.navlinks li a:hover {
-    background-color: #111;
+    /* background-color: #111; */
+    color: rgb(59, 159, 87);
 }
 
 /* about section */
@@ -162,4 +203,10 @@ footer{
     padding: 0px;
 }
 
-
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
